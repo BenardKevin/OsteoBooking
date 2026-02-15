@@ -1,9 +1,33 @@
+
 <div class="cabinet container bootstrap snippets bootdey py-5">
+  <h2 class="h2-style text-center">Prennez rendez-vous<br>en cabinet ou à domicile.</h2>
   <div class="row">
+    <div class="cabinet-desc">
+      <div>
+        <div class="content">
+          <div>
+            <h3 class="descript">Choisissez la méthode qui vous convient.</h3>
+            <ul class="descript" style="list-style: none; padding-left: 0;">
+              <li> Réservez rapidement votre consultation en ligne sur
+              <a href="https://www.doctolib.fr/osteopathe/grasse/florine-benard"
+                target="_blank"
+                rel="noopener noreferrer">Doctolib</a>.</li>
+              <li>Par téléphone au <a href="tel:+33651171266">06 51 17 12 66</a></li>
+              <li><a href="https://fbosteo.simplybook.it/v2/?widget-type=iframe&theme=creative&theme=creative&timeline=modern&datepicker=top_calendar#book/count/1/"
+                    target="_blank"
+                    rel="noopener noreferrer">Ou directement en ligne</a></li>
+            </ul>
+            <p class="descript note">
+              N'oubliez pas de préciser votre adresse complète<br> lors de la réservation pour un rendez-vous à domicile.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
       class="col-md-6"
       *ngFor="let cabinet of cabinetList"
-      title="Clique pour voir sur Google Maps"
+      title="Voir sur Google Maps"
     >
       <a [href]="cabinet.mapsLink" class="widget widget-image" target="_blank">
         <div class="widget-image-cover disable-select">

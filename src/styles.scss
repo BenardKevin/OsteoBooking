@@ -1,8 +1,17 @@
+@import './assets/css/fontawesome.min.css';
+@import './assets/css/bootstrap.min.css';
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "stabil_grotesk", sans-serif; }
 .mat-mdc-dialog-surface {
     box-shadow: none !important;
     background-color: transparent !important;
 }
-@import './assets/css/fontawesome.min.css';
-@import './assets/css/bootstrap.min.css';
+.h2-style {
+    color: #222;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.1em;
+    letter-spacing: -0.05rem;
+    margin: 0 0 15px;
+    padding-bottom: 4rem;
+}

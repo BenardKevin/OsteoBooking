@@ -5,14 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class HeaderService {
   private doctolibButton: any = {
-    title: 'RDV dans mon cabinet',
+    title: 'Je prends RDV !',
     link: 'https://www.doctolib.fr/osteopathe/grasse/florine-benard',
     iconClass: 'logo_doctolib',
     iconLink: './assets/images/logo_doctolib.svg',
     color: 'blue',
 };
 private homeButton: any = {
-  title: 'RDV à votre domicile',
+  title: 'Massage Bien-Etre à la maison',
   link: 'https://fbosteo.simplybook.it/v2/?widget-type=iframe&theme=creative&theme=creative&timeline=modern&datepicker=top_calendar#book/count/1/',
   iconClass: 'home',
   color: 'green',

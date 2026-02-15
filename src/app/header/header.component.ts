@@ -13,6 +13,6 @@ export class HeaderComponent implements OnInit {
   @Input() homeButton!: any;
   @Input() phoneButton!: any;
   ngOnInit() {};
-  headerTitle: string = 'Florine Bénard Ostéopathe D.O.';
-  headerSubtitle: string = 'Ostéopathe à Grasse, et séances à votre domicile';
+  headerTitle: string = "Et si vous repartiez du bon pied ?";
+  headerSubtitle1: string = "Je suis Florine, Ostéopathe D.O., et je vous reçois à Grasse ou à votre domicile.";
 }

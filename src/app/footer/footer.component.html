@@ -38,20 +38,22 @@
             <div class="widget_title">
               <h4>{{ titleContacts }}</h4>
             </div>
-            <div class="contact_info" *ngFor="let contact of contactList">
-              <div class="single_info">
-                <div class="icon">
-                  <i class="{{ contact.icon }}"></i>
+            <div class="">
+              <div class="contact_info" *ngFor="let contact of contactList">
+                <div class="single_info">
+                  <div class="icon">
+                    <i class="{{ contact.icon }}"></i>
+                  </div>
+                  <div class="info">
+                    <p>
+                      {{ contact.label }} :
+                      <a [href]="contact.link" target="_blank">{{
+                        contact.text
+                      }}</a>
+                    </p>
+                  </div>
                 </div>
-                <div class="info">
-                  <p>
-                    {{ contact.label }} :
-                    <a [href]="contact.link" target="_blank">{{
-                      contact.text
-                    }}</a>
-                  </p>
-                </div>
-              </div>
+            </div>
             </div>
           </div>
         </div>

@@ -51,134 +51,47 @@ a {
 }
 .main-timeline {
   position: relative;
-  &:before {
-    content: "";
-    width: 5px;
-    height: 100%;
-    border-radius: 20px;
-    margin: 0 auto;
-    background: #242922;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
   .timeline {
     display: inline-block;
     margin-bottom: 50px;
     position: relative;
-    &:before {
-      content: "";
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      background: #d81159;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 1;
-      transform: translate(-50%, -50%);
-    }
     &:nth-child(even) {
       .timeline-icon {
         left: auto;
         right: 30%;
-        &:before {
-          right: auto;
-          left: -100px;
-        }
-        &:after {
-          right: auto;
-          left: -30px;
-        }
       }
       .timeline-content {
         float: left;
-        &:before {
-          left: auto;
-          right: 35px;
-          transform: rotateY(180deg);
-        }
-        &:after {
-          left: auto;
-          right: 0;
-        }
       }
     }
     &:nth-child(2n) {
-      .timeline-content {
-        &:after {
-          background: #f68657;
-        }
-        &:before {
-          border-left-color: $border-left-color_1;
-          border-bottom-color: $border-bottom-color_1;
-        }
-      }
       .timeline-icon {
         i {
           background: #f68657;
         }
-        &:before {
-          background: #f68657;
-        }
         border-color: $border-color_1;
-      }
-      &:before {
-        background: #f68657;
       }
       .title {
         color: $color_4;
       }
     }
     &:nth-child(3n) {
-      .timeline-content {
-        &:after {
-          background: #8fb800;
-        }
-        &:before {
-          border-left-color: $border-left-color_2;
-          border-bottom-color: $border-bottom-color_2;
-        }
-      }
       .timeline-icon {
         i {
           background: #8fb800;
         }
-        &:before {
-          background: #8fb800;
-        }
         border-color: $border-color_2;
-      }
-      &:before {
-        background: #8fb800;
       }
       .title {
         color: $color_5;
       }
     }
     &:nth-child(4n) {
-      .timeline-content {
-        &:after {
-          background: #2fcea5;
-        }
-        &:before {
-          border-left-color: $border-left-color_3;
-          border-bottom-color: $border-bottom-color_3;
-        }
-      }
       .timeline-icon {
         i {
           background: #2fcea5;
         }
-        &:before {
-          background: #2fcea5;
-        }
         border-color: $border-color_3;
-      }
-      &:before {
-        background: #2fcea5;
       }
       .title {
         color: $color_6;
@@ -207,31 +120,6 @@ a {
       z-index: 1;
       position: relative;
     }
-    &:after {
-      content: "";
-      width: 100px;
-      height: 4px;
-      background: #d81159;
-      position: absolute;
-      top: 50%;
-      right: -100px;
-      transform: translateY(-50%);
-      width: 70px;
-      height: 50px;
-      background: #f0f6ff;
-      top: 89px;
-      right: -30px;
-    }
-    &:before {
-      content: "";
-      width: 100px;
-      height: 4px;
-      background: #d81159;
-      position: absolute;
-      top: 50%;
-      right: -100px;
-      transform: translateY(-50%);
-    }
   }
   .timeline-content {
     width: 50%;
@@ -239,26 +127,6 @@ a {
     margin: 52px 0 0;
     float: right;
     position: relative;
-    &:before {
-      content: "";
-      width: 70%;
-      height: 100%;
-      border: 3px solid #d81159;
-      border-top: none;
-      border-right: none;
-      position: absolute;
-      bottom: -13px;
-      left: 35px;
-    }
-    &:after {
-      content: "";
-      width: 37px;
-      height: 3px;
-      background: #d81159;
-      position: absolute;
-      top: 13px;
-      left: 0;
-    }
   }
   .title {
     font-size: 20px;
@@ -276,46 +144,13 @@ a {
 .main-timeline2 {
   overflow: hidden;
   position: relative;
-  &:before {
-    content: "";
-    width: 5px;
-    height: 76%;
-    background: #333;
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
   .timeline-content {
-    &:before {
-      top: 50%;
-      transform: translateY(-50%);
-      content: "";
-      width: 90px;
-      height: 10px;
-      border-top: 7px dotted #333;
-      position: absolute;
-      left: -92px;
-    }
     display: block;
     padding-left: 150px;
     position: relative;
   }
   .timeline {
-    &:before {
-      top: 50%;
-      transform: translateY(-50%);
-      content: "";
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #fff;
-      border: 5px solid #333;
-      position: absolute;
-      left: -10px;
-    }
     width: 50%;
-    padding-left: 100px;
     float: right;
     position: relative;
     &:nth-child(2n) {
@@ -341,10 +176,6 @@ a {
           border-right: 20px solid #f54957;
           transform: rotate(-45deg);
         }
-      }
-      &:before {
-        left: auto;
-        right: -10px;
       }
       .title {
         color: $color_9;

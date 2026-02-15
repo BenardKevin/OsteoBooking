@@ -7,12 +7,12 @@ import { HeaderService } from './header.service';
 import { ContactsService } from './contacts.service';
 
 import { CabinetComponent } from './cabinet/cabinet.component';
-import { CalendarComponent } from './calendar/calendar.component';
 import { FooterComponent } from './footer/footer.component';
 import { GoogleReviewsComponent } from './google-reviews/google-reviews.component';
 import { HeaderComponent } from './header/header.component';
 import { NoteCardsComponent } from './note-cards/note-cards.component';
 import { ResumeComponent } from './resume/resume.component';
+import { CdkAriaLive } from "../../node_modules/@angular/cdk/a11y/index";
 
 @Component({
   selector: 'app-root',
@@ -20,12 +20,12 @@ import { ResumeComponent } from './resume/resume.component';
   imports: [
     HeaderComponent,
     CabinetComponent,
-    CalendarComponent,
     FooterComponent,
     GoogleReviewsComponent,
     NoteCardsComponent,
-    ResumeComponent
-  ],
+    ResumeComponent,
+    CdkAriaLive
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -42,9 +42,9 @@ export class AppComponent implements OnInit {
   timelineItems: any[];
   private renderer: Renderer2;
 
-  constructor(private cabinetsService: CabinetsService, 
-    private contactsService: ContactsService, 
-    private headerService: HeaderService, 
+  constructor(private cabinetsService: CabinetsService,
+    private contactsService: ContactsService,
+    private headerService: HeaderService,
     private timelineService: TimelineService,
     private rendererFactory: RendererFactory2,
     @Inject(PLATFORM_ID) private platformId: any) {

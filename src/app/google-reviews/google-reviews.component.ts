@@ -9,7 +9,8 @@ import { Component, Inject, Input, OnInit, Renderer2 } from '@angular/core';
   styleUrl: './google-reviews.component.scss',
 })
 export class GoogleReviewsComponent implements OnInit {
-  title = 'Évaluations Google';
+  title = 'Vous hésitez ? Lisez';
+  title2 = 'ce que mes patients en pensent.';
 
   @Input() cabinetList!: any[];
   reviewSize: number = 0;
@@ -25,7 +26,7 @@ export class GoogleReviewsComponent implements OnInit {
     script.src = 'https://apps.elfsight.com/p/platform.js';
     script.defer = true;
     this.renderer2.appendChild(this._document.body, script);
-    
+
     if (this.cabinetList && Array.isArray(this.cabinetList)) {
       if (this.cabinetList.length > 1) {
         this.cabinetList.forEach(cabinet => {

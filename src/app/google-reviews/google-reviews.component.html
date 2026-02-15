@@ -2,7 +2,7 @@
   <div class="container py-5">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h3 class="fw-bold mb-4">{{ title }}</h3>
+        <h2 class="h2-style">{{ title }} <br> {{ title2 }}</h2>
       </div>
     </div>
     <div class="row">
@@ -10,11 +10,8 @@
         [class]="'col-md-' + cabinet.reviewSize + ' mb-4 mb-md-3'"
         *ngFor="let cabinet of cabinetList"
       >
-        <div class="card">
-          <div class="card-body pb-0">
-            <h5 class="font-weight-bold">{{ cabinet.name }}</h5>
-            <div [class]="'elfsight-app-' + cabinet.reviewId"></div>
-          </div>
+        <div class="card-body pb-0">
+          <div [class]="'elfsight-app-' + cabinet.reviewId"></div>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ $color_1: #fff;
 $color_2: rgba(255, 255, 255, 0.9);
 
 .cabinet {
+  margin-top: 5rem;
   .widget.widget-image {
     overflow: hidden;
   }
@@ -79,7 +80,8 @@ $color_2: rgba(255, 255, 255, 0.9);
       padding: 0 10px;
     }
     align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
   }
   .widget-image-user {
     .widget-image-user-image {
@@ -96,4 +98,28 @@ $color_2: rgba(255, 255, 255, 0.9);
       margin-left: 46px;
     }
   }
+  .cabinet-desc {
+    align-items: center;
+    max-width: 50%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+    .content {
+      text-align: center;
+      align-items: center;
+
+    }
+
+  }
+}
+
+
+$color_5: #1869a3;
+$color_7: #1f7f31;
+
+.blue-color {
+  color: $color_5;
+}
+.green-color {
+  color: $color_7;
 }

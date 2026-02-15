@@ -6,13 +6,6 @@ import { Injectable } from '@angular/core';
 export class TimelineService {
   private timelineItems = [
         {
-          iconClass: 'fa-graduation-cap',
-          title: 'Dîplôme',
-          description: [
-            "Ostéopathe D.O. agréée par le ministère de la santé, diplômée de l'école Supérieure de l’Ostéopathie à Sophia Antipolis (formation sur 5 ans comprenant 5000 heures de cours théoriques et pratiques et intégrant un enseignement sur différentes techniques crâniennes, tissulaires et viscérales), avec une spécialisation de 1 an à l'école IS-OSTéO de Lyon."
-          ]
-        },
-        {
           iconClass: 'fa-kit-medical',
           title: 'Soins de Qualité',
           description: [
@@ -28,8 +21,26 @@ export class TimelineService {
             "Une séance dure environ 45min. Pensez à vous munir de vos examens, si vous en avez."
           ]
         },
+        {
+          iconClass: 'fa-graduation-cap',
+          title: 'Dîplôme',
+          description: [
+            "Ostéopathe D.O. agréée par le ministère de la santé, diplômée de l'école Supérieure de l’Ostéopathie à Sophia Antipolis (formation sur 5 ans comprenant 5000 heures de cours théoriques et pratiques et intégrant un enseignement sur différentes techniques crâniennes, tissulaires et viscérales), avec une spécialisation de 1 an à l'école IS-OSTéO de Lyon."
+          ]
+        },
+        {
+          iconClass: 'fa-dollar',
+          title: 'Tarifs et Paiement',
+          description: [
+            "Paiements acceptés : Espèces, Chèque, ou Paypal",
+            "Tarifs au cabinet : 65€ les jours ouvrés. 70€ le samedi, 80€ les dimanches et jours fériés.",
+            "Tarifs à domicile : 80€ (Grasse, Mougins, Pégomas, Plascassier). 85€ (Le Cannet, Mandelieu, Valbonne, Chateauneuf)",
+            "Les séances d'ostéopathie ne sont pas remboursées par la CPAM, mais certaines mutuelles les remboursent à 100% (renseignez vous auprès de votre mutuelle)."
+
+          ]
+        }
       ];
-    
+
 
   constructor() {}
 

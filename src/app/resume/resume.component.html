@@ -1,4 +1,5 @@
 <div class="container mt-5">
+  <h2 class="h2-style text-center">Votre corps a des choses à vous dire.<br>Je suis là pour les écouter.</h2>
   <div class="row">
     <div class="col-md-12">
       <div class="main-timeline2">
@@ -10,9 +11,7 @@
             <div class="inner-content">
               <h3 class="title">{{ item.title }}</h3>
               <ul>
-                <li *ngFor="let desc of item.description" class="description">
-                  {{ desc }}
-                </li>
+                <li *ngFor="let desc of item.description" class="description">{{ desc }}</li>
               </ul>
             </div>
           </div>
