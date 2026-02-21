@@ -12,7 +12,6 @@ import { GoogleReviewsComponent } from './google-reviews/google-reviews.componen
 import { HeaderComponent } from './header/header.component';
 import { NoteCardsComponent } from './note-cards/note-cards.component';
 import { ResumeComponent } from './resume/resume.component';
-import { CdkAriaLive } from "../../node_modules/@angular/cdk/a11y/index";
 
 @Component({
   selector: 'app-root',
@@ -23,8 +22,7 @@ import { CdkAriaLive } from "../../node_modules/@angular/cdk/a11y/index";
     FooterComponent,
     GoogleReviewsComponent,
     NoteCardsComponent,
-    ResumeComponent,
-    CdkAriaLive
+    ResumeComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
